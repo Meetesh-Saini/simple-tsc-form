@@ -1,0 +1,17 @@
+.dm-sans {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.hello {
+    color: #099f4e;
+}
+
+.fields {
+    color: #2a2a2a;
+}
+
+.send-btn {
+    background-color: #0dba4b;
+}

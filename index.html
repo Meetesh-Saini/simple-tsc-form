@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Contact Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 dm-sans">
+    <div class="container mx-auto p-8 flex space-x-8">
+        <!-- Contact Details Section -->
+        <div class="w-1/2 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-4xl font-semibold mb-4">Contact Us</h2>
+            <p class="mb-6 text-xl">Let us know your queries, feedback, and inquiries. We are here to support you
+                24/7.</p>
+
+            <div class="space-y-12">
+                <div class="flex items-center space-x-4">
+                    <div class="w-11">
+                        <img alt="call_icon" src="https://guvi.in/assets/Dln4fx0b-phone.webp" width="146" height="146">
+                    </div>
+                    <div>
+                        <h4 class="text-gray-500">Give us a call</h4>
+                        <p class="font-semibold text-xl">+91 9736097320</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-11">
+                        <img alt="call_icon" src="https://guvi.in/assets/D3BQ_U0T-message.webp" width="146"
+                            height="146">
+                    </div>
+                    <div>
+                        <h4 class="text-gray-500">Write to us</h4>
+                        <p class="font-semibold text-xl">cs@guvi.in</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-24">
+                        <img class="w-8" alt="call_icon" src="https://guvi.in/assets/BrgqbmZY-location.webp" width="146"
+                            height="146">
+                    </div>
+                    <div>
+                        <h4 class="text-gray-500">Visit us in Chennai @</h4>
+                        <p class="font-semibold text-xl">IITM Research park - phase 2, module #9, 3rd floor, D block, Kanagam Rd, Tharamani, Chennai, Tamil Nadu 600113</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-16">
+
+                    </div>
+                    <div>
+                        <h4 class="text-gray-500">Visit us in Noida @</h4>
+                        <p class="font-semibold text-xl">A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida, Uttar Pradesh 201307</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="w-1/2 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-4xl font-semibold mb-4">Say <span class="hello">Hello!</span></h2>
+            <p class="mb-6">Feel free to stop by and say hi!</p>
+
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block fields">Name <span class="text-red-500">*</span></label>
+                    <input type="text" field-type="Name" id="name" class="mt-1 p-2 border rounded w-full outline-none"
+                        requiredq>
+                </div>
+
+                <div>
+                    <label for="email" class="block fields">E-mail id <span class="text-red-500">*</span></label>
+                    <input type="email" field-type="Email" id="email"
+                        class="mt-1 p-2 border rounded w-full outline-none" requiredq>
+                </div>
+
+                <div>
+                    <label for="contact" class="block fields">Contact Number <span class="text-red-500">*</span></label>
+                    <input type="text" field-type="Contact" id="contact"
+                        class="mt-1 p-2 border rounded w-full outline-none" requiredq>
+                </div>
+
+                <div>
+                    <label for="subject" class="block fields">Subject <span class="text-red-500">*</span></label>
+                    <input type="text" field-type="Subject" id="subject"
+                        class="mt-1 p-2 border rounded w-full outline-none" requiredq>
+                </div>
+
+                <div>
+                    <label for="message" class="block fields">Message <span class="text-red-500">*</span></label>
+                    <textarea field-type="Message" id="message" class="mt-1 p-2 border rounded w-full outline-none"
+                        rows="4" requiredq></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full send-btn hover:bg-green-600 text-white font-semibold py-3 rounded">Send</button>
+
+                <p id="successMessage" class="hidden text-green-500 mt-4 text-center font-bold text-xl">Form Submitted Successfully!</p>
+                <p id="errorMessage" class="hidden text-red-500 mt-4 text-center font-bold text-xl">Submission Failed. Please try again.</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
